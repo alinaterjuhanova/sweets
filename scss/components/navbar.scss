@@ -1,0 +1,113 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 15px 0;
+    background-color: rgb(197 114 125 / 22%);
+}
+
+
+.navbar > .container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    margin-right: 20px;
+    font-family: "Rosa Marena";
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c0505;
+}
+
+.navbar-toggler {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    margin: 3px 0;
+    width: 22px;
+    height: 2px;
+    background: #2c0505;
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-item + .navbar-item {
+    margin: 3px 0 0 0;
+}
+
+.navbar-link {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    color: #2c0505;
+}
+
+.navbar-icon ~ span {
+    margin-left: 6px;
+}
+
+.navbar-link:hover, .navbar-link:focus, .navbar-link:active {
+    background: rgba(197, 114, 125, 0.22);
+}
+
+
+/* tablet */
+@media (min-width: 768px) {
+    .navbar {
+        position: absolute;
+        background: transparent;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-item + .navbar-item {
+        margin: 0 0 0 6px;
+    }
+}
+
+/* laptop / dekstop */
+@media (min-width: 1024px) {
+    .navbar {
+        position: absolute;
+        background: transparent;
+    }
+    .login-nav {
+        position: absolute;
+        top: 25px;
+    }
+}

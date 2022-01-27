@@ -1,0 +1,50 @@
+.form {
+    &-container {
+        background: #f3f3f4;
+    }
+
+    &-title {
+        margin: 50px 0 0 10px;
+        font-weight: 500;
+        font-size: 36px;
+        color: #ab2b01;
+    }
+    
+    &-text {
+        padding-bottom: 10px;
+        font-weight: 500;
+    }
+    
+  
+    &-group {
+        margin: 10px;
+    }
+
+    &-input {
+        padding: 15px 30px;
+        border: 1px solid #fff;
+        border-radius: 38px;
+    }
+   
+    &-confirm {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 10px;
+        color: #cdc8ca;
+    }
+
+    &-conf {
+        color: #cdc8ca;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .container-sm {
+        margin: 20px;
+    }
+}
+
+
+
+

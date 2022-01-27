@@ -1,0 +1,487 @@
+@font-face {
+  font-family: "Rosa Marena";
+  src: url("../fonts/rosa-marena/rosa-marena.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/rosa-marena/rosa-marena.eot?#iefix") format("embedded-opentype"), url("../fonts/rosa-marena/rosa-marena.otf") format("opentype"), url("../fonts/rosa-marena/rosa-marena.svg") format("svg"), url("../fonts/rosa-marena/rosa-marena.ttf") format("truetype"), url("../fonts/rosa-marena/rosa-marena.woff") format("woff"), url("../fonts/rosa-marena/rosa-marena.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+/* imports */
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2c0505;
+}
+
+@font-face {
+  font-family: "Rosa Marena";
+  src: url("../fonts/rosa-marena/rosa-marena.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/rosa-marena/rosa-marena.eot?#iefix") format("embedded-opentype"), url("../fonts/rosa-marena/rosa-marena.otf") format("opentype"), url("../fonts/rosa-marena/rosa-marena.svg") format("svg"), url("../fonts/rosa-marena/rosa-marena.ttf") format("truetype"), url("../fonts/rosa-marena/rosa-marena.woff") format("woff"), url("../fonts/rosa-marena/rosa-marena.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+.rosa-marena {
+  font-family: "Rosa Marena";
+  text-transform: none;
+  color: #ab2b01;
+}
+
+.bg {
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1380px;
+  width: 100%;
+}
+
+.container-sm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  margin: 0 -15px;
+}
+.row-wrap {
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  padding: 0 15px;
+}
+.col-auto {
+  flex: 0 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .break {
+    flex-basis: 100%;
+    width: 0;
+  }
+}
+.justify-center {
+  justify-content: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 15px 0;
+  background-color: rgba(197, 114, 125, 0.22);
+}
+
+.navbar > .container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  margin-right: 20px;
+  font-family: "Rosa Marena";
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c0505;
+}
+
+.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  margin: 3px 0;
+  width: 22px;
+  height: 2px;
+  background: #2c0505;
+}
+
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-item + .navbar-item {
+  margin: 3px 0 0 0;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  color: #2c0505;
+}
+
+.navbar-icon ~ span {
+  margin-left: 6px;
+}
+
+.navbar-link:hover, .navbar-link:focus, .navbar-link:active {
+  background: rgba(197, 114, 125, 0.22);
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .navbar {
+    position: absolute;
+    background: transparent;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-item + .navbar-item {
+    margin: 0 0 0 6px;
+  }
+}
+/* laptop / dekstop */
+@media (min-width: 1024px) {
+  .navbar {
+    position: absolute;
+    background: transparent;
+  }
+
+  .login-nav {
+    position: absolute;
+    top: 25px;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.container-header {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.header-title {
+  margin: 0;
+  font-weight: 500;
+  color: #ab2b02;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.header-text {
+  margin: 30px 0 40px 0;
+  font-size: 18px;
+  text-align: center;
+  color: #2c0505;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 597px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    height: 726px;
+  }
+}
+.header-min {
+  height: 380px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 38px;
+  border: 1px solid #999;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-rose {
+  background: #c5727d;
+  border-color: #c5727d;
+}
+.btn-arrow {
+  margin-top: 70px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background: transparent;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.btn-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-rose:hover, .btn-rose:focus, .btn-rose:active {
+  background-color: #ab2b02;
+  border-color: #ab2b02;
+  box-shadow: 5px 5px 5px rgba(168, 80, 117, 0.541);
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.content {
+  text-align: center;
+}
+
+.section {
+  padding: 40px 0;
+}
+.section-title {
+  font-weight: 500;
+  font-size: 36px;
+  color: #ab2b01;
+}
+.section-text {
+  margin: 0 0 30px 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card {
+  margin: 20px 0;
+}
+.card-img {
+  display: inline-flex;
+  width: 150px;
+  height: 150px;
+  background: transparent;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.card-text {
+  font-weight: 600;
+}
+
+.gallery {
+  text-align: center;
+}
+.gallery-title {
+  font-weight: 500;
+  font-size: 36px;
+  color: #ab2b01;
+}
+.gallery-text {
+  margin: 0 0 50px 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+.gallery-img {
+  width: 300px;
+  height: 300px;
+}
+.gallery-padding {
+  padding: 0;
+}
+
+@media (max-width: 950px) {
+  .gallery-row {
+    flex-wrap: wrap;
+  }
+}
+.form-container {
+  background: #f3f3f4;
+}
+.form-title {
+  margin: 50px 0 0 10px;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ab2b01;
+}
+.form-text {
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+.form-group {
+  margin: 10px;
+}
+.form-input {
+  padding: 15px 30px;
+  border: 1px solid #fff;
+  border-radius: 38px;
+}
+.form-confirm {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 10px;
+  color: #cdc8ca;
+}
+.form-conf {
+  color: #cdc8ca;
+}
+
+@media (max-width: 500px) {
+  .container-sm {
+    margin: 20px;
+  }
+}
+.delivery-title {
+  margin: 50px 0 0 10px;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ab2b01;
+}
+.delivery-text {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: justify;
+}
+.delivery-text-2 {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+.delivery-icon {
+  margin-right: 10px;
+  width: 35px;
+  height: 30px;
+}
+
+.footer {
+  padding: 15px 0;
+  background-color: rgba(197, 114, 125, 0.22);
+}
+.footer-container {
+  justify-content: space-evenly;
+}
+.footer-brand {
+  margin-right: 20px;
+  font-family: "Rosa Marena";
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c0505;
+}
+.footer-list-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-list-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  color: #2c0505;
+}
+.footer-icon {
+  filter: invert(40%);
+}
+
+.footer-link:hover, .footer-link:focus, .footer-link:active {
+  background: rgba(197, 114, 125, 0.22);
+}
+
+@media (max-width: 800px) {
+  .footer-list-1 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

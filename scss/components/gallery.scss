@@ -1,0 +1,32 @@
+.gallery {
+    text-align: center;
+
+
+    &-title {
+            font-weight: 500;
+            font-size: 36px;
+            color: #ab2b01;
+    }
+
+    &-text {
+        margin: 0 0 50px 0;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    &-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    &-padding {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .gallery-row {
+        flex-wrap: wrap;
+    }
+}

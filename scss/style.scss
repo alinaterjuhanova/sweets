@@ -1,0 +1,26 @@
+
+@font-face {
+	font-family: "Rosa Marena";
+	src: url("../fonts/rosa-marena/rosa-marena.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/rosa-marena/rosa-marena.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("../fonts/rosa-marena/rosa-marena.otf") format("opentype"), /* Open Type Font */
+		url("../fonts/rosa-marena/rosa-marena.svg") format("svg"), /* Legacy iOS */
+		url("../fonts/rosa-marena/rosa-marena.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../fonts/rosa-marena/rosa-marena.woff") format("woff"), /* Modern Browsers */
+		url("../fonts/rosa-marena/rosa-marena.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* imports */
+
+@import 'components/main.scss';
+@import 'components/navbar.scss';
+@import 'components/header.scss';
+@import 'components/btn.scss';
+@import 'components/content.scss';
+@import 'components/gallery.scss';
+@import 'components/form.scss';
+@import 'components/delivery.scss';
+@import 'components/footer.scss';

@@ -1,0 +1,38 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 38px;
+    border: 1px solid #999;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+
+    &-rose {
+        background: #c5727d;
+        border-color: #c5727d;
+    }
+
+    &-arrow {
+        margin-top: 70px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        background: transparent;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+   
+    
+    &-flex {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.btn-rose:hover, .btn-rose:focus, .btn-rose:active {
+    background-color: #ab2b02;
+    border-color: #ab2b02;
+    box-shadow: 5px 5px 5px rgba(168, 80, 117, 0.541);
+    transition: box-shadow 0.4s ease-in-out;
+}
